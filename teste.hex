@@ -1,0 +1,18 @@
+# Casos de teste - um de cada formato + desvio negativo + inválida
+0x00500413   # addi s0, zero, 5   (I)
+0x00C58633   # add a2, a1, a2     (R)
+0x0064A423   # sw t1, 8(s1)       (S)
+0xFE628CE3   # beq t0, t1, -8     (B, negativo)
+123452B7     # lui t0, 0x12345    (U)
+008000EF     # jal ra, +8         (J)
+FFDFF06F     # j -4               (J negativo)
+40B50533     # sub a0, a0, a1
+4014D493     # srai s1, s1, 1
+0004A503     # lw a0, 0(s1)
+00000013     # nop
+00008067     # ret
+00000073     # ecall
+
+FFFFFFFF     # inválida
+lixo
+00300513     # li a0, 3 (continua após inválida)

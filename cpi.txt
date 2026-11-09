@@ -1,0 +1,5 @@
+ALU 1
+LOAD    5
+STORE   4
+BRANCH  3
+JUMP    3
